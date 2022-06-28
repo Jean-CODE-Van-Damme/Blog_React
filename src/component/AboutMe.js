@@ -6,10 +6,9 @@ const AboutMe = (props) => {
   return (
     <>
       <ItemTitle first_title={props.first_title} />
-      <div className="little_picture">
-        <div className="vador">
-          <ItemPicture image={props.image} />
-        </div>
+
+      <div className="vador">
+        <ItemPicture image={props.image} />
       </div>
       <ItemDescription description={props.description} />
     </>

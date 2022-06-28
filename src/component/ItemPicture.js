@@ -3,11 +3,7 @@
 
 const ItemPicture = (props) => {
   console.log(props.image);
-  return (
-    <>
-      <img src={props.image} alt="photos" />
-    </>
-  );
+  return <img src={props.image} alt="photos" />;
 };
 
 export default ItemPicture;

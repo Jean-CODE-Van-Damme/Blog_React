@@ -19,6 +19,7 @@ h1 {
 h2 {
   font-size: 30px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 h3 {
@@ -62,7 +63,7 @@ h3 {
   margin: 20px 0px 20px 0px;
   width: 100%;
   /* border: 2px red solid; */
-  height: 1000px;
+  height: auto;
   display: flex;
 }
 
@@ -73,6 +74,7 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* border: 5px blue solid; */
 }
 
 .side__content {
@@ -110,24 +112,12 @@ h3 {
   background-color: white;
 }
 
-.picture {
-  /* border: 5px green solid; */
-  width: 100%;
-  height: 60%;
-  margin-top: 20px;
-  background-color: grey;
-}
-
 .description {
-  margin-top: 20px;
-}
-
-.little_picture {
-  /* border: 2px red solid; */
-  width: 90%;
-  height: 50%;
-  background-color: grey;
-  /* border: 5px green solid; */
+  margin-top: 30px;
+  /* color: red; */
+  max-width: 100%;
+  max-height: 100%;
+  line-height: 18px;
 }
 
 .footer {
@@ -138,20 +128,67 @@ h3 {
   height: 100px;
 }
 
-.vador img {
+.yoda_force {
+  margin-top: 20px;
+  height: 60%;
+}
+
+.vador {
+  /* background-color: gold; */
+  height: 50%;
+}
+
+img {
   width: 100%;
-  height: 205px;
-  /* border: 5px red solid; */
+  height: 100%;
+  /* border: 2px red solid; */
   object-fit: contain;
   object-fit: cover;
   object-position: center;
 }
 
-.yoda_force img {
-  width: 100%;
-  height: 265px;
-  /* border: 5px red solid; */
-  object-fit: contain;
-  object-fit: cover;
-  object-position: top;
+@media (max-width: 910px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 660px) {
+  .content {
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+
+  .main__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 80%;
+    margin-bottom: 20px;
+    gap: 20px;
+  }
+
+  .yoda_force {
+    height: 40%;
+  }
+
+  .vador {
+    height: 50%;
+  }
+
+  .vador img {
+    height: 50%;
+  }
+
+  .side__content {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
 }
