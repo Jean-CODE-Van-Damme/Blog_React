@@ -10,7 +10,7 @@ const App = () => {
       <div className="body">
         <div className="container">
           <Header
-            title={"My Blog"}
+            title={"Yoda Blog"}
             baseline={"Comment devenir un Jedi en 3 Etapes"}
           />
           <NavigationMenu link={"Link"} />
