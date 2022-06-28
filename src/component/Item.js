@@ -9,7 +9,9 @@ const Item = (props) => {
       <ItemTitle first_title={props.first_title} />
       <ItemSubtitle subtitle={props.subtitle} />
       <div className="picture">
-        <ItemPicture />
+        <div className="yoda_force">
+          <ItemPicture image={props.image} />
+        </div>
       </div>
       <ItemDescription description={props.description} />
     </>
